@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61E90231F3BD56E005E62D0 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61E90221F3BD56E005E62D0 /* UIExtensions.swift */; };
+		F65873FD1F3FA12D00F77A04 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65873FC1F3FA12D00F77A04 /* Backend.swift */; };
+		F65873FF1F3FC1C500F77A04 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65873FE1F3FC1C500F77A04 /* LoginView.swift */; };
+		F69CC4EF1F3B6AAF00861486 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69CC4EE1F3B6AAF00861486 /* LoginViewController.swift */; };
+		F69CC4F21F3B6B1800861486 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69CC4F11F3B6B1800861486 /* User.swift */; };
 		F6A9C5E01F3B54CB00593D86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A9C5DF1F3B54CB00593D86 /* AppDelegate.swift */; };
 		F6A9C5E21F3B54CB00593D86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A9C5E11F3B54CB00593D86 /* ViewController.swift */; };
 		F6A9C5E51F3B54CB00593D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A9C5E31F3B54CB00593D86 /* Main.storyboard */; };
 		F6A9C5E71F3B54CB00593D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A9C5E61F3B54CB00593D86 /* Assets.xcassets */; };
 		F6A9C5EA1F3B54CB00593D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A9C5E81F3B54CB00593D86 /* LaunchScreen.storyboard */; };
+		F6A9C5F31F3B562C00593D86 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A9C5F21F3B562C00593D86 /* SwiftyJSON.swift */; };
+		F6CC115D1F3B5DB700355B4C /* Heroku.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CC115C1F3B5DB700355B4C /* Heroku.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F61E90221F3BD56E005E62D0 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		F65873FC1F3FA12D00F77A04 /* Backend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
+		F65873FE1F3FC1C500F77A04 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F69CC4EE1F3B6AAF00861486 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F69CC4F11F3B6B1800861486 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F6A9C5DC1F3B54CB00593D86 /* Help Durham.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Help Durham.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A9C5DF1F3B54CB00593D86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A9C5E11F3B54CB00593D86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +34,9 @@
 		F6A9C5E61F3B54CB00593D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6A9C5E91F3B54CB00593D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6A9C5EB1F3B54CB00593D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A9C5F11F3B562C00593D86 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		F6A9C5F21F3B562C00593D86 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		F6CC115C1F3B5DB700355B4C /* Heroku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heroku.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +50,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F65874001F3FC85900F77A04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F65873FE1F3FC1C500F77A04 /* LoginView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F65874011F3FC86E00F77A04 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F69CC4EE1F3B6AAF00861486 /* LoginViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F69CC4F01F3B6B0400861486 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6CC115C1F3B5DB700355B4C /* Heroku.swift */,
+				F69CC4F11F3B6B1800861486 /* User.swift */,
+				F65873FC1F3FA12D00F77A04 /* Backend.swift */,
+				F61E90221F3BD56E005E62D0 /* UIExtensions.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		F6A9C5D31F3B54CB00593D86 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +96,17 @@
 		F6A9C5DE1F3B54CB00593D86 /* Help Durham */ = {
 			isa = PBXGroup;
 			children = (
+				F65874011F3FC86E00F77A04 /* Controller */,
+				F65874001F3FC85900F77A04 /* View */,
+				F69CC4F01F3B6B0400861486 /* Model */,
 				F6A9C5DF1F3B54CB00593D86 /* AppDelegate.swift */,
 				F6A9C5E11F3B54CB00593D86 /* ViewController.swift */,
 				F6A9C5E31F3B54CB00593D86 /* Main.storyboard */,
 				F6A9C5E61F3B54CB00593D86 /* Assets.xcassets */,
 				F6A9C5E81F3B54CB00593D86 /* LaunchScreen.storyboard */,
 				F6A9C5EB1F3B54CB00593D86 /* Info.plist */,
+				F6A9C5F11F3B562C00593D86 /* SwiftyJSON.h */,
+				F6A9C5F21F3B562C00593D86 /* SwiftyJSON.swift */,
 			);
 			path = "Help Durham";
 			sourceTree = "<group>";
@@ -136,7 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65873FD1F3FA12D00F77A04 /* Backend.swift in Sources */,
+				F6A9C5F31F3B562C00593D86 /* SwiftyJSON.swift in Sources */,
+				F61E90231F3BD56E005E62D0 /* UIExtensions.swift in Sources */,
+				F65873FF1F3FC1C500F77A04 /* LoginView.swift in Sources */,
+				F6CC115D1F3B5DB700355B4C /* Heroku.swift in Sources */,
+				F69CC4F21F3B6B1800861486 /* User.swift in Sources */,
 				F6A9C5E21F3B54CB00593D86 /* ViewController.swift in Sources */,
+				F69CC4EF1F3B6AAF00861486 /* LoginViewController.swift in Sources */,
 				F6A9C5E01F3B54CB00593D86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +351,7 @@
 				F6A9C5F01F3B54CB00593D86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
