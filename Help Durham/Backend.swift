@@ -17,6 +17,7 @@ enum HerokuError:Error {
     case notAuthorized
     case wrongFormat
     case wrongEmailOrPassword
+    case notLoggedIn
     
     public var localizedDescription:String {
         switch self {
@@ -26,7 +27,7 @@ enum HerokuError:Error {
             return "Not Authorized"
         case .wrongFormat:
             return "Improperly Formatted"
-        case . wrongEmailOrPassword:
+        case .wrongEmailOrPassword:
             return "Wrong Email or Password"
         default:
             return "Failed"
@@ -85,7 +86,12 @@ struct Backend {
             (year,month,day) = date.getComponents()
             let queryUrl = URL(string: baseUrlString + "events?date="+[year,month,day].joined(separator: "-"))!
             var request = URLRequest(url: queryUrl)
-            request.allHTTPHeaderFields = ["Authorization":"JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1OThhNDljN2E0YTc2YzhhZmQwMGZmZDQiLCJlbWFpbCI6InpiMzJAZHVrZS5lZHUiLCJwYXNzd29yZCI6IiQyYSQxMCR2cUxCZFJrdDFIRzBMUVUyelFrT0F1ei9CMnFaS003VWRYcEJNa1JYQ2p0T29CVldDSHNTcSIsIl9fdiI6MH0.E5rW_RnCGQiGqu4UQxq4Wrj3MI6PkTpE3Mops22bZyE"]
+            
+            guard let token = User.shared.token else {
+                completion(HerokuError.notLoggedIn,nil)
+                return
+            }
+            request.allHTTPHeaderFields = ["Authorization":User.shared.token!]
             let session = URLSession.shared;
             
             let task = session.dataTask(with: request, completionHandler: {

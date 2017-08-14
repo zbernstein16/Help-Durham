@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B34961061C4036A02F9A9D76 /* Pods_Help_Durham.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCA93AA1F1964DED9275DD0 /* Pods_Help_Durham.framework */; };
 		F61E90231F3BD56E005E62D0 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61E90221F3BD56E005E62D0 /* UIExtensions.swift */; };
 		F65873FD1F3FA12D00F77A04 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65873FC1F3FA12D00F77A04 /* Backend.swift */; };
 		F65873FF1F3FC1C500F77A04 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65873FE1F3FC1C500F77A04 /* LoginView.swift */; };
@@ -18,10 +19,15 @@
 		F6A9C5E71F3B54CB00593D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A9C5E61F3B54CB00593D86 /* Assets.xcassets */; };
 		F6A9C5EA1F3B54CB00593D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A9C5E81F3B54CB00593D86 /* LaunchScreen.storyboard */; };
 		F6A9C5F31F3B562C00593D86 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A9C5F21F3B562C00593D86 /* SwiftyJSON.swift */; };
+		F6C679351F41225700297605 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C679341F41225700297605 /* EventViewController.swift */; };
+		F6C679371F41240300297605 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C679361F41240300297605 /* EventView.swift */; };
 		F6CC115D1F3B5DB700355B4C /* Heroku.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CC115C1F3B5DB700355B4C /* Heroku.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BCA93AA1F1964DED9275DD0 /* Pods_Help_Durham.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Help_Durham.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9442B536528CBC7E2AD09269 /* Pods-Help Durham.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Help Durham.release.xcconfig"; path = "Pods/Target Support Files/Pods-Help Durham/Pods-Help Durham.release.xcconfig"; sourceTree = "<group>"; };
+		E3B299EC18CE757E89901FD0 /* Pods-Help Durham.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Help Durham.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Help Durham/Pods-Help Durham.debug.xcconfig"; sourceTree = "<group>"; };
 		F61E90221F3BD56E005E62D0 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		F65873FC1F3FA12D00F77A04 /* Backend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
 		F65873FE1F3FC1C500F77A04 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		F6A9C5EB1F3B54CB00593D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6A9C5F11F3B562C00593D86 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
 		F6A9C5F21F3B562C00593D86 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		F6C679341F41225700297605 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		F6C679361F41240300297605 /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		F6CC115C1F3B5DB700355B4C /* Heroku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heroku.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,16 +52,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34961061C4036A02F9A9D76 /* Pods_Help_Durham.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23D03CE0266C6DE0096FB2FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3B299EC18CE757E89901FD0 /* Pods-Help Durham.debug.xcconfig */,
+				9442B536528CBC7E2AD09269 /* Pods-Help Durham.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E71549E1E6604ABD97313AA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BCA93AA1F1964DED9275DD0 /* Pods_Help_Durham.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F65874001F3FC85900F77A04 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				F65873FE1F3FC1C500F77A04 /* LoginView.swift */,
+				F6C679361F41240300297605 /* EventView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -62,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F69CC4EE1F3B6AAF00861486 /* LoginViewController.swift */,
+				F6C679341F41225700297605 /* EventViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -82,6 +110,8 @@
 			children = (
 				F6A9C5DE1F3B54CB00593D86 /* Help Durham */,
 				F6A9C5DD1F3B54CB00593D86 /* Products */,
+				23D03CE0266C6DE0096FB2FF /* Pods */,
+				E71549E1E6604ABD97313AA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6A9C5EE1F3B54CB00593D86 /* Build configuration list for PBXNativeTarget "Help Durham" */;
 			buildPhases = (
+				B26C8884858CAA6160E8ACC9 /* [CP] Check Pods Manifest.lock */,
 				F6A9C5D81F3B54CB00593D86 /* Sources */,
 				F6A9C5D91F3B54CB00593D86 /* Frameworks */,
 				F6A9C5DA1F3B54CB00593D86 /* Resources */,
+				9C7D5C6FDAC12F45D27FD30F /* [CP] Embed Pods Frameworks */,
+				853B1A5C72F14C7CCF22BCF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +211,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		853B1A5C72F14C7CCF22BCF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Help Durham/Pods-Help Durham-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C7D5C6FDAC12F45D27FD30F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Help Durham/Pods-Help Durham-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B26C8884858CAA6160E8ACC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6A9C5D81F3B54CB00593D86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -185,9 +266,11 @@
 			files = (
 				F65873FD1F3FA12D00F77A04 /* Backend.swift in Sources */,
 				F6A9C5F31F3B562C00593D86 /* SwiftyJSON.swift in Sources */,
+				F6C679371F41240300297605 /* EventView.swift in Sources */,
 				F61E90231F3BD56E005E62D0 /* UIExtensions.swift in Sources */,
 				F65873FF1F3FC1C500F77A04 /* LoginView.swift in Sources */,
 				F6CC115D1F3B5DB700355B4C /* Heroku.swift in Sources */,
+				F6C679351F41225700297605 /* EventViewController.swift in Sources */,
 				F69CC4F21F3B6B1800861486 /* User.swift in Sources */,
 				F6A9C5E21F3B54CB00593D86 /* ViewController.swift in Sources */,
 				F69CC4EF1F3B6AAF00861486 /* LoginViewController.swift in Sources */,
@@ -310,6 +393,7 @@
 		};
 		F6A9C5EF1F3B54CB00593D86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3B299EC18CE757E89901FD0 /* Pods-Help Durham.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Help Durham/Info.plist";
@@ -322,6 +406,7 @@
 		};
 		F6A9C5F01F3B54CB00593D86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9442B536528CBC7E2AD09269 /* Pods-Help Durham.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Help Durham/Info.plist";

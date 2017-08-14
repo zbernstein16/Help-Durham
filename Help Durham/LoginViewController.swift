@@ -18,7 +18,7 @@ class LoginViewController:UIViewController, LoginViewDelegate {
         super.viewDidLoad()
         
         
-        let loginView = LoginView()
+        let loginView = LoginView(frame:self.view.frame)
         loginView.delegate = self
         self.view = loginView
         loginView.animate()
@@ -47,7 +47,13 @@ class LoginViewController:UIViewController, LoginViewDelegate {
                 
             } else if success == true {
                 let ac = UIAlertController(title: "Logged in successfully", message: "Yay", preferredStyle: .alert)
-                let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                let action = UIAlertAction(title: "Ok", style: .cancel, handler:{
+                    _ in
+                    
+                    let eventVC = EventViewController()
+                    self.navigationController?.pushViewController(eventVC, animated: true)
+                })
+                
                 ac.addAction(action)
                 print(User.shared.token)
                 self.present(ac, animated: true, completion: nil)
